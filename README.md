@@ -1,12 +1,11 @@
 # Practice
 
-### Just for practice
-
-これはGitHubとProgramingの練習用です。
+### Usage
+just for practice
 
 ### Language
-*python
-*perl
-*c
-*Java
-*HTML+javascript
+* python
+* perl
+* c
+* Java
+* HTML+javascript
