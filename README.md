@@ -4,10 +4,11 @@
 just for practice
 
 ### Language
+* c
+* c#
+* Java
 * python3
 * perl
-* c
-* Java
 * HTML+javascript
 
 ### Contents
