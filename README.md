@@ -6,6 +6,7 @@ just for practice
 ### Language
 * c
 * c#
+* Visual Basic
 * Java
 * python3
 * perl
