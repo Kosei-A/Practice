@@ -33,18 +33,32 @@ def main():
 
     print("----- 1.5 print first 4 characters -----")
     str = "Hello World"
-    print("{0:s}\n".format(str[:4]))
+    print("{0:s}".format(str[:4]))
     print("----- End -----\n")
 
     print("----- 1.6 print last 4 characters -----")
     str = "Hello World"
-    print("{0:s}\n".format(str[-4:]))
+    print("{0:s}".format(str[-4:]))
     print("----- End -----\n")
 
     print("----- 1.7 print 4 characters from [W] -----")
     beg = (str.find("W"))
-    print("{0:s}\n".format(str[beg:beg+4]))
+    print("{0:s}".format(str[beg:beg+4]))
     print("----- End -----\n")
+
+    print("----- 1.8 Hello 'name'! * 3 times using function-----")
+    who = "Tom"
+    str = hello_name(who, 3)
+    print(str)
+    print("----- End -----\n")
+    
+def hello_name(name, num):
+    return "Hello %s! " %name * num
 
 if __name__ == '__main__':
     main()
+
+
+
+
+
