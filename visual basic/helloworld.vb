@@ -53,10 +53,25 @@
         Console.WriteLine(str.Substring(str.IndexOf("W"), 4))
         Console.WriteLine("----- End -----" & vbCrLf)
 
+
+        Console.WriteLine("----- 1.8 Hello 'name'! * 3 times using function -----")
+        str = hello_name("Tom", 3)
+        Console.WriteLine(str)
+        Console.WriteLine("----- End -----" & vbCrLf)
+
         ' Keep the console window open in debug mode. 
         Console.WriteLine("Press any key to exit.")
         Console.ReadKey()
 
     End Sub
+
+    Public Function hello_name(name As String, count As Integer) As String
+        Dim hello As String = "Hello" & name & "! "
+        Dim buf As New System.Text.StringBuilder(hello.Length * count)
+        For i As Integer = 0 To count - 1
+            buf.Append(hello)
+        Next
+        Return buf.ToString()
+    End Function
 
 End Module

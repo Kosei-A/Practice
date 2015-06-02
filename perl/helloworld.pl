@@ -51,3 +51,14 @@ my $idx;
 $idx = index($str, "W");
 print substr($str, $idx, 4), "\n";
 print("----- End -----\n\n");
+
+print("----- 1.8 Hello 'name'! * 3 times using function-----\n");
+my $who = "Tom";
+$str = &hello_name($who, 3);
+print $str, "\n";
+print("----- End -----\n\n");
+
+sub hello_name {
+  ($name, $num) = @_;
+  return "Hello $name! " x $num;
+}

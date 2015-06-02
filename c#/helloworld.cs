@@ -62,9 +62,26 @@ namespace helloworld
             Console.WriteLine(str.Substring(str.IndexOf("W"),4));
             Console.WriteLine("----- End -----\n");
 
+            Console.WriteLine("----- 1.8 Hello 'name'! * 3 times using function -----");
+            str = hello_name("Tom", 3);
+            Console.WriteLine(str);
+            Console.WriteLine("----- End -----\n");
+
             // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
+        }
+
+        public static string hello_name(string name, int count)
+        {
+            string hello = "Hello" + name + "! ";
+            System.Text.StringBuilder buf =
+                new System.Text.StringBuilder(hello.Length * count);
+            for (int i = 0; i < count; i++)
+            {
+                buf.Append(hello);
+            }
+            return buf.ToString();
         }
     }
 }
