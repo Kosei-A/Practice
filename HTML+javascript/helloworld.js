@@ -20,15 +20,15 @@ for (var n = 0; n < 5; n++){
 document.write("----- End -----<br><br>");
 
 document.write("----- 1.3 print each characters -----<br>");
-str = "Hello World";
-for (i = 0; i < str.length; i++) {
+var str = "Hello World";
+for (var i = 0; i < str.length; i++) {
     document.write(str.charAt(i) + "<br>");
 }
 document.write("----- End -----<br><br>");
 
 document.write("----- 1.4 print [l] character only -----<br>");
-str = "Hello World";
-for (i = 0; i < str.length; i++) {
+var str = "Hello World";
+for (var i = 0; i < str.length; i++) {
     if(str.charAt(i) == "l"){
       document.write(str.charAt(i) + "<br>");
     }
@@ -46,3 +46,15 @@ document.write("----- End -----<br><br>");
 document.write("----- 1.7 print 4 characters from [W] -----<br>");
 document.write(str.substring(str.indexOf("W"),str.indexOf("W")+4) + "<br>");
 document.write("----- End -----<br><br>");
+
+document.write("----- 1.8 Hello 'name'! * 3 times using function -----<br>");
+var who = "Tom";
+var str = hello_name(who, 3);
+document.write(str + "<br>");
+document.write("----- End -----<br><br>");
+
+function hello_name(name, count){
+  Array(count+1); //=> [undefined, undefined, undefined]
+  var ret = Array(count+1).join("Hello " + name + "! "); //=> "YunoYunoYuno"
+  return ret;
+}

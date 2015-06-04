@@ -55,7 +55,27 @@ public class helloworld {
 		 System.out.println(str.substring(index,index+4));
 		 System.out.println("----- End -----\r\n");
 
+		 System.out.println("----- 1.8 Hello 'name'! * 3 times using function-----");
+		 String who = "Tom";
+		 str = hello_name(who, 3);
+		 System.out.println(str);
+		 System.out.println("----- End -----\n\n");
+
 
 	}
+
+	private static String hello_name(String name, int count)
+    {
+        String hello = "Hello " + name + "! ";
+        //String ret= StringUtils.repeat(hello, 3);
+        StringBuilder buf = new StringBuilder(hello.length() * count);
+            for (int i = 0; i < count; i++)
+            {
+            	 buf.append(hello);
+            }
+        String ret = new String(buf);
+        return ret;
+    }
+
 
 }
