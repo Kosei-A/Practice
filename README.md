@@ -21,4 +21,6 @@ just for practice
  1.5 print first 4 characters  
  1.6 print last 4 characters  
  1.7 print 4 characters from [W]  
- 1.8 Hello 'name'! * 3 times using function  
+ 1.8 Hello 'name'! * 3 times using function
+
+#### 2. CSV Open and Print it #####  
