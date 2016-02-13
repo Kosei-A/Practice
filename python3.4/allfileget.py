@@ -4,12 +4,12 @@
 # Name           : csv open
 # Purpose        : lesson
 # Python version : 3.4
-# Author         : kosei.ashihara
+# Author         : kosei.a
 #
 # Created        : 13/2/2016
-# Copyright      : kosei.ashihara
+# Copyright      : kosei.a
 # Licence        : your licence
-# Command        : py -3 csvopen.py -d [dirname]
+# Command        : python3 csvopen.py -d [dirname]
 #---------------------------------------------------
 
 import csv            #csv module import
