@@ -10,6 +10,8 @@
 # Copyright:   kosei.a
 # Licence:     your licence
 # Command:     python3 csvopen.py -f [filename]
+#
+#
 #---------------------------------------------------
 
 import csv            #csv module import
