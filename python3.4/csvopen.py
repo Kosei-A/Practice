@@ -29,7 +29,7 @@ print ('')
 def main():
     dest = results.file_name
 
-    delimiter=","     # <-好きな区切り文字を指定, csv fileはカンマ区切り
+    delimiter=","     # <-区切り文字指定, csv fileはカンマ区切り
     with open(dest, "rU") as f:
         data = map(lambda x:x.split(delimiter), f.read().strip().split("\n"))
 
