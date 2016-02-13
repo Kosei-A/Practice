@@ -23,4 +23,4 @@ just for practice
  1.7 print 4 characters from [W]  
  1.8 Hello 'name'! * 3 times using function
 
-#### 2. CSV Open and Print it #####  
+#### 2. CSV Open and Print it   
